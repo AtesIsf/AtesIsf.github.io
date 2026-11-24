@@ -8,7 +8,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --base: #faf4ed; --surface: #fffaf3;
-    --text: #575279; --subtle: #797593; --muted: #6e6a86;
+    --text: #575279; --subtle: #6e6a86; --muted: #6e6a86;
     --love: #b4637a; --gold: #9a6412; --rose: #575279;
     --pine: #286983; --foam: #56949f; --iris: #286983;
     --border: #9893a5;
