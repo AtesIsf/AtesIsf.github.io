@@ -35,3 +35,4 @@ nav a[aria-current] { color: var(--text); border-bottom-color: var(--love); }
 .tag { color: var(--gold); font-size: .85em; }
 .stack { color: var(--subtle); }
 footer { padding-bottom: 2rem; color: var(--subtle); }
+hr { border: 0; border-top: 1px solid var(--border); margin: 1.25rem 0; }
