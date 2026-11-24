@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Cascadia Mono";
-  src: url("../fonts/CascadiaMono.ttf") format("truetype");
+  src: url("../fonts/CascadiaMono.woff2") format("woff2");
+  font-weight: 200 700;
   font-display: swap;
 }
 * { box-sizing: border-box; }
