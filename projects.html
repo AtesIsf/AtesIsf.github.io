@@ -26,7 +26,8 @@
 <h1>Projects</h1>
 <article>
 <div class="item-head"><h2>RIO <span class="tag">In progress</span></h2><time datetime="2026-09">Sep 2026 – Present</time></div>
-<p>64-bit RISC-V OS kernel in C and Assembly. Preemptive priority scheduler with context switching, semaphores, and delta sleep queues. 4KiB block allocator. Trap and interrupt dispatcher driven by the RISC-V timer. Bare-metal test suite run under QEMU.</p>
+<p>64-bit RISC-V OS kernel in C and Assembly. Boots on QEMU's virt machine with no firmware: its own boot code configures machine mode, delegates traps, and drops into supervisor mode. Timer interrupts drive a trap dispatcher that preempts processes under a priority scheduler with context switching. Processes synchronize with semaphores and sleep on a delta queue, and memory comes from a 4 KiB block allocator. A bare-metal test suite runs headless under QEMU and powers the VM off when done.</p>
+<p class="stack">~2,200 lines · 9 test suites (8 subsystem, 1 integration)</p>
 <p class="stack">Stack: C, Assembly, QEMU, Docker/Podman</p>
 <p><a href="https://github.com/AtesIsf/Rio">Repository</a></p>
 </article>

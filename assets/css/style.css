@@ -29,6 +29,11 @@ pre.cowsay { display: flex; justify-content: safe center; }
 pre { overflow-x: auto; background: var(--surface); border: 1px solid var(--border); border-radius: .5rem; padding: .75rem; }
 nav a { padding: .5rem .75rem; text-decoration: none; color: var(--subtle); border-bottom: 2px solid transparent; }
 nav a[aria-current] { color: var(--text); border-bottom-color: var(--love); }
+/* Phones: shrink nav so all 5 links fit on one row down to ~320px */
+@media (max-width: 34rem) {
+  nav { justify-content: space-between; font-size: min(1rem, 3.4vw); }
+  nav a { padding: .5rem .25rem; }
+}
 .box, article { background: var(--surface); border: 1px solid var(--border); border-radius: .5rem; padding: .25rem 1rem 1rem; margin: 1rem 0; }
 .box { border-left: 4px solid var(--pine); padding-top: .75rem; }
 .box h2, article h2 { margin-bottom: .25rem; }
