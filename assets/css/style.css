@@ -17,7 +17,7 @@ h1 { text-decoration: underline; text-underline-offset: .2em; }
 .subtitle { color: var(--subtle); margin-top: -.5rem; }
 .nav-icon { height: 1em; width: auto; vertical-align: -.15em; border-radius: 0; }
 img { max-width: 100%; height: auto; border-radius: .5rem; }
-pre.cowsay { width: fit-content; max-width: 100%; margin: 0 auto; }
+pre.cowsay { display: flex; justify-content: center; }
 pre { overflow-x: auto; background: var(--surface); border: 1px solid var(--border); border-radius: .5rem; padding: .75rem; color: var(--text); }
 nav a { padding: .5rem .75rem; text-decoration: none; color: var(--subtle); border-bottom: 2px solid transparent; }
 nav a[aria-current] { color: var(--text); border-bottom-color: var(--love); }
