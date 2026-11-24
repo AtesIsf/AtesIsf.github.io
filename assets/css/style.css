@@ -11,10 +11,13 @@ a { color: var(--iris); overflow-wrap: anywhere; }
 a:hover { color: var(--foam); }
 a:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .25rem; border-bottom: 1px solid var(--border); }
-h1, h2 { text-decoration: underline; text-underline-offset: .2em; }
+h1 { text-decoration: underline; text-underline-offset: .2em; }
+.item-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem .75rem; }
+.item-head time { color: var(--subtle); font-size: .9em; margin-left: auto; }
+.subtitle { color: var(--subtle); margin-top: -.5rem; }
+.nav-icon { height: 1em; width: auto; vertical-align: -.15em; border-radius: 0; }
 img { max-width: 100%; height: auto; border-radius: .5rem; }
 pre { overflow-x: auto; background: var(--surface); border: 1px solid var(--border); border-radius: .5rem; padding: .75rem; color: var(--text); }
-.links { text-align: center; }
 nav a { padding: .5rem .75rem; text-decoration: none; color: var(--subtle); border-bottom: 2px solid transparent; }
 nav a[aria-current] { color: var(--text); border-bottom-color: var(--love); }
 .box, article { background: var(--surface); border: 1px solid var(--border); border-radius: .5rem; padding: .25rem 1rem 1rem; margin: 1rem 0; }
